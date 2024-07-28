@@ -11,4 +11,4 @@ def index():
     return render_template('index.html', content = "Classes on daily bases" , matter = ['python' , 'java' , 'dotnet' , 'Flask' , 'Django'])
 
 if __name__ == "__main__":
-    app.run(port=5003, debug=True)
+    app.run(port=5000, debug=True)
