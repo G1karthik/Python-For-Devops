@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Your APP</title> 
+    </head>
+    <body>
+        <h1> One source for all your needs</h1>
+        <p>all you have to do is to give ur commitment</p>
+        <p>{{ content }}</p>
+        {% for i in matter %}
+        <p>{{ i }}</p>
+        {% if i == 'python' %}
+        <p>fee for python is RS.10000</p>
+        {% elif i == 'java' %}
+        <p>fee for java is RS.5000</p>
+        {% elif i == 'dotnet' %}
+        <p>fee for dotnet is RS.12000</p>
+        {% elif i == 'Flask' %}
+        <p>fee for Flask is RS.5000</p>
+        {% elif i == 'Django' %}
+        <p>fee for Django is RS.5000</p>
+        {% endif %}
+        {% endfor %}
+    </body>
+</html>
